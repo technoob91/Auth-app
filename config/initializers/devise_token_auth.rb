@@ -13,7 +13,7 @@ DeviseTokenAuth.setup do |config|
 
   config.default_confirm_success_url = "#{ENV['FRONTEND_URL']}/login"
   
-  config.default_password_resURL = "#{ENV['FRONTEND_URL']}/reset_password"
+  config.default_password_reset_url = "#{ENV['FRONTEND_URL']}/reset_password"
   
   config.remove_tokens_after_password_reset = true
 
