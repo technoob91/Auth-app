@@ -42,7 +42,6 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
       address:              'email-smtp.us-west-2.amazonaws.com',
       port:                 587,
-      # domain:               'gmail.com',
       user_name:            ENV['AWS_SES_USERNAME'],
       password:             ENV['AWS_SES_PASSWORD'],
       authentication:       'plain',
