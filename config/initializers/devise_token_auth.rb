@@ -11,9 +11,9 @@ DeviseTokenAuth.setup do |config|
   # determines how long tokens will remain valid after they are issued.
   config.token_lifespan = 2.weeks
 
-  config.default_confirm_success_url = "#{ENV['FRONTEND_url']}/login"
+  config.default_confirm_success_url = "#{ENV['FRONTEND_URL']}/login"
   
-  config.default_password_reset_url = "#{ENV['FRONTEND_url']}/reset_password"
+  config.default_password_resURL = "#{ENV['FRONTEND_URL']}/reset_password"
   
   config.remove_tokens_after_password_reset = true
 
